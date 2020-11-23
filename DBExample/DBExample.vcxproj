@@ -112,6 +112,9 @@
     <PostBuildEvent>
       <Command>xcopy "C:\Program Files\Soci\soci_4_0_0\bin\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del "$(TargetDir)\*.dll"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
