@@ -1,0 +1,3 @@
+[submodule "3rdparty/soci"]
+	path = 3rdparty/soci
+	url = https://github.com/soci/soci
